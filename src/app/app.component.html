@@ -1,1 +1,15 @@
-<h1>Soy's Project</h1>
+<h1 class="title">{{title}}</h1>
+<div class="card-container">
+<mat-card *ngFor="let card of cards" class="card">
+  <mat-card-header class="header">
+    <h2>{{card.title}}</h2>
+  </mat-card-header>
+  <mat-card-content>
+    <iframe>{{card.image}}</iframe>
+    <p>{{card.body}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button> Go </button>
+  </mat-card-actions>
+</mat-card>
+</div>
