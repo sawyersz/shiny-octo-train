@@ -5,11 +5,12 @@
     <h2>{{card.title}}</h2>
   </mat-card-header>
   <mat-card-content>
-    <iframe>{{card.image}}</iframe>
+    <iframe><img src="{{card.image}}" alt="image"></iframe>
     <p>{{card.body}}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button> Go </button>
+    <button class="mat-button" [routerLink]="card.routerLink"> Go </button>
   </mat-card-actions>
 </mat-card>
 </div>
+<router-outlet></router-outlet>
